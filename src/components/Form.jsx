@@ -10,8 +10,9 @@ function Form() {
     gender: "",
     favCountry: "",
   };
-  const [formData, setData] = React.useState(initialFormData);
-
+  const [formData,setData]=React.useState(()=>{
+    return JSON.parse(localStorage.getItem("formData")) || initialFormData
+  })
   function handleChange(event) {
     const { name, value, checked, type } = event.target;
     setData((prevData) => {
@@ -30,6 +31,10 @@ function Form() {
     console.log(formData);
     reset()
   }
+
+  React.useEffect(()=>{
+    localStorage.setItem("formData",JSON.stringify(formData))
+  },[formData])
   return (
     <div id="formContainer">
       <h1>React Form</h1>
@@ -144,7 +149,7 @@ function Form() {
           onChange={handleChange}
         ></textarea>
         <div className="btns">
-          <button type="reset" className="btn" onChange={reset}>
+          <button type="reset" className="btn" onClick={reset}>
             Reset
           </button>
           <button type="submit" className="btn" onSubmit={handleSubmit}>
