@@ -115,7 +115,9 @@
 
 
 /* here  start the site css for navBar */
-
+.body.dark{
+  background-color: #000033;
+}
 .navBar{
   height: 90px;
   width: 100%;
@@ -372,4 +374,225 @@
   position: fixed;
   bottom: 2rem;
   right: 3rem;
+}
+
+/* for hero section */
+.hero{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.main-hero.dark{
+  background-color: #000033;
+  height: 100%;
+  width: 100%;
+}
+
+
+.hero1 {
+  background-image: url(post1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+  width: 740px;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.hero1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the last value (0.5) to make the overlay darker or lighter */
+}
+
+.tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blueviolet;
+  height: 25px;
+  width: 70px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title{
+  position: absolute;
+  bottom: 17%;
+  left: 5%;
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 80%;
+}
+.title:hover{
+  color: blueviolet;
+  transition: .3s ease-in-out;
+  text-decoration: underline;
+}
+.author{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+.link-post1{
+  color: white;
+  text-decoration: none;
+}
+
+.link-post1:hover{
+  color: blueviolet;
+  transition: 0.2s ease-in-out;
+}
+
+.hero2{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  gap: 27px;
+  margin-right: 1.5rem;
+}
+
+.post2{
+  background-image: url(post2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 218px;
+  width: 388px;
+  position: relative;
+}
+.poat2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.post3{
+  background-image: url(post3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 218px;
+  width: 388px;
+  position: relative;
+  z-index: 1;
+}
+.post3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.post2-title{
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  color: white;
+}
+.post2-title:hover{
+  color: blueviolet;
+  transition: .3s ease-in-out;
+  text-decoration: underline;
+}
+
+/* for posts div  */
+.postContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.post4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 30px;
+  height: 194px;
+  width: 80%;
+  margin-left: 2rem;
+  position: relative;
+
+}
+.latest-posts{
+  position: absolute;
+  top: 0;
+  left: 2.7%;
+  margin-top: 1rem;
+}
+.edited-posts{
+  position: absolute;
+  top: 0;
+  right: 2.7%;
+  margin-top: 1rem;
+}
+.post4-img{
+  height: 194px;
+  width: 230px;
+}
+
+.post4-tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blueviolet;
+  height: 25px;
+  width: 70px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.author-detail{
+  width: 80%;
+}
+
+.detail{
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 1rem;
+
+}
+
+.postTitle{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;  
+  color: #000033;
+}
+
+.post-detail{
+  color: gray;
+  font-weight: 400;
+  line-height: 20px;
 }
