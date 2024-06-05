@@ -33,18 +33,8 @@ function App() {
     <NavBar darkMode ={mode} handleMode={handleMode}/>
     <Hero/>
     {info }
-
     </div>
 
-// {
-//   id: 1,
-//   tag: "Fashion",
-//   title: "How Lovely Yellow is! It Stands for the Sun",
-//   author: "Gello Due",
-//   time: "GELLO DOE | March 26 2021 | 260 Views",
-//   detail:"Venus has a runaway greenhouse effect. I kind of want to know what happened there because we’re twirling knobs here on Earth without knowing the consequences of it. Mars once",
-//   img:"post1.jpeg"
-// },
   )
 }
 

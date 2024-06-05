@@ -384,6 +384,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 5rem;
 }
 .main-hero.dark{
   background-color: #000033;
@@ -417,13 +418,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: blueviolet;
-  height: 25px;
-  width: 70px;
+  background-color: rgb(236, 92, 249);
   text-align: center;
   color: white;
   font-size: 14px;
   font-weight: 500;
+  height: 25px;
+  width: 70px;
 }
 
 .title{
@@ -497,7 +498,6 @@
   height: 218px;
   width: 388px;
   position: relative;
-  z-index: 1;
 }
 .post3::before {
   content: "";
@@ -528,19 +528,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .post4{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
-  gap: 30px;
+  gap: 20px;
   height: 194px;
-  width: 80%;
-  margin-left: 2rem;
+  width: 90%;
+  /* margin-left: 2rem; */
   position: relative;
+  margin-top: 1.5rem;
 }
+
 .post4.dark{
   display: flex;
   justify-content: center;
@@ -548,7 +551,7 @@
   margin-top: 4rem;
   gap: 30px;
   height: 194px;
-  width: 80%;
+  width: 90%;
   margin-left: 2rem;
   position: relative;
   color: white;
@@ -566,10 +569,10 @@
   margin-top: 1rem;
   color: white;
 }
-.edited-posts{
+.edited-posts-text{
   position: absolute;
   bottom: 0;
-  right: 2.7%;
+  right: 17.7%;
   margin-top: 1rem;
 }
 .edited-posts.dark{
@@ -592,7 +595,7 @@
   left: 0;
   background-color: blueviolet;
   height: 25px;
-  width: 70px;
+  width: 80px;
   text-align: center;
   color: white;
   font-size: 14px;
@@ -600,7 +603,7 @@
 }
 
 .author-detail{
-  width: 80%;
+  width: 70%;
 }
 
 .detail{
@@ -609,20 +612,46 @@
   margin-bottom: 1rem;
 
 }
-
 .postTitle{
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 1rem;  
+  margin-bottom: 1.5rem;  
   color: #000033;
+  text-decoration: none;
+}
+.postTitle:hover{
+  color: blueviolet;
+  transition: .3s ease-in-out;
+  text-decoration: underline;
+}
+.postTitle.dark{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;  
+  color: #ddddde;
+}
+.postTitle.dark:hover{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;  
+  color:white;
+  color: blueviolet;
+  transition: .3s ease-in-out;
+  text-decoration: underline;
 }
 
 .post-detail{
   color: gray;
   font-weight: 400;
   line-height: 20px;
+  margin-top: .60rem;
+}
+.post-detail.dark{
+  color: rgb(240, 240, 240);
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.post4-detail.dark{
-  color: white;
-}
+
+/* for aside pas\rt */
+
