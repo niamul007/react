@@ -81,8 +81,8 @@ function NavBar(props) {
             </ul>
             </div>
             </div>}
-            <div className="dark-light">
-            <button onClick={props.handleMode}>{props.darkMode===true? "💡":"🌙"}</button>
+            <div className="dark-light" >
+              <button type="button" onClick={props.handleMode}>{props.darkMode?"💡":"🌙"}</button>
             </div>
     </div>
   );
