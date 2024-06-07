@@ -117,6 +117,8 @@
 /* here  start the site css for navBar */
 .body.dark{
   background-color: #000033;
+  padding-bottom: 5rem;
+
 }
 .navBar{
   height: 90px;
@@ -718,6 +720,9 @@
 
 
 /* for icon setup */
+.joinContainer{
+  margin-top: 5rem;
+}
 .icon-container{
   display: flex;
   justify-content: start;
@@ -744,6 +749,10 @@
   position: absolute;
   right: 2%;
 }
+.left-i.dark{
+
+  color: white;
+}
 
 .joinContainer{
   width: 100%;
@@ -755,11 +764,117 @@
   font-weight: 600;
 
 }
+.i-name.dark{
+  font-size: 14px;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: white;
+
+}
 .i-name:hover{
-  font-size: 16px;
   margin-left: 1.5rem;
   color: blueviolet;
   font-weight: 600;
   transition: .3s ease-in-out;
 
+}
+.fa.dark{
+  color: white;
+}
+.join-us.dark{
+  color: white;
+}
+.join-us{
+  color: #000033;
+}
+
+.news-shelter{
+  margin-top: 4rem;
+
+}
+.news-shelter.dark{
+  margin-top: 4rem;
+  color: white;
+}
+.news{
+  margin-bottom: 1.5rem;
+}
+.news.dark{
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.sign-up{
+  height: 60px;
+  width: 90%;
+  border-radius: 30px;
+  border: 1px solid rgb(201, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up.dark{
+  height: 60px;
+  width: 90%;
+  border-radius: 30px;
+  border: 1px solid rgb(29, 29, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email{
+  height: 60px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 69%;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+.email.dark{
+  height: 60px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 69%;
+  margin-left: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+}
+.sign-up-btn{
+  height: 60px;
+  width: 130px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  background-color: #ddddde;
+  color: #000000;
+}
+.sign-up-btn:hover{
+  background-color: #549a42;
+}
+.sign-up-btn.dark{
+  height: 60px;
+  width: 130px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  background-color: #000020;
+  color: #fcfafa;
+}
+.text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000033;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.text.dark{
+  font-size: 16px;
+  font-weight: 500;
+  width: 70%;
+  margin-bottom: 2rem;
+  color: white;
 }
