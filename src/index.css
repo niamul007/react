@@ -117,7 +117,7 @@
 /* here  start the site css for navBar */
 .body.dark{
   background-color: #000033;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 
 }
 .navBar{
@@ -877,4 +877,143 @@
   width: 70%;
   margin-bottom: 2rem;
   color: white;
+}
+
+/* foootrt start here  */
+.footer{
+  margin-top: 5rem;
+  background-color:gainsboro ;
+  height: 100%;
+
+}
+
+.take-all{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.f-log{
+  font-size: 29px;
+  color: #000020;
+  font-weight: 900;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.f-phone{
+  font-size: 15px;
+  color: rgb(99, 99, 99);
+  margin-bottom: .50rem;
+  
+}
+.f-contact{
+  font-size: 15px;
+  color: rgb(99, 99, 99);
+  margin-bottom: .50rem;
+}
+.f-populer{
+  font-size: 20px;
+  color: #000020;
+  font-weight: 800;
+  margin-bottom:1rem;
+  margin-top: 1rem;
+}
+.f-populer.dark{
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+.p-span{
+  font-size: 20px;
+  color: rgb(167, 166, 166);
+  margin-right: .80rem;
+}
+.p-post{
+  color: #000020;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+.p-post:hover{
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  color: blueviolet;
+  transition: .3s ease-in-out;
+}
+.p-post.dark{
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.p-time{
+  margin-left: 20px;
+  color: gray;
+  margin-bottom: 2rem;
+  margin-top: .50rem;
+  font-size: 14px;
+}
+
+
+.cat{
+  margin-top: 1rem;
+  margin-bottom: .50rem;
+  width: 27%;
+}
+.f-cat{
+  color: #000020;
+  font-size: 25px;
+  font-weight: 800;
+}
+.f-cat.dark{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+
+}
+.all-cat{
+  display: flex;
+  justify-content:start;
+  align-content:start;
+  flex-wrap: wrap;
+}
+.cat-item{
+  text-decoration: none;
+  height: 20px;
+  font-weight:400;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.cat-item:hover{
+  text-decoration: none;
+  height: 20px;
+  font-weight:400;
+  color: blueviolet;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-txt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.f-txt{
+  margin-left: 2rem;
+  font-size: 15px;
+  color: #000033;
+}
+.socil-link{
+  margin-right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

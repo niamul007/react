@@ -7,7 +7,7 @@ import Hero from "./components/Hero";
 import Post from "./components/Post";
 import { data } from "./components/Data";
 import Edited from "./components/Edited";
-import { e_data } from "./components/Edata";
+import Footer from "./components/Footer";
 function App() {
   const [mode, setMode] = React.useState(true);
   function handleMode() {
@@ -37,6 +37,7 @@ function App() {
       <Hero />
       {info}
       <Edited darkMode={mode}/>
+      <Footer darkMode={mode}/>
     </div>
   );
 }
