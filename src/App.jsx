@@ -8,6 +8,7 @@ import Post from "./components/Post";
 import { data } from "./components/Data";
 import Edited from "./components/Edited";
 import Footer from "./components/Footer";
+import Weather from "./components/Weather";
 function App() {
   const [mode, setMode] = React.useState(true);
   function handleMode() {
@@ -32,12 +33,13 @@ function App() {
 
 
   return (
-    <div className={`body ${mode ? "dark" : ""}`}>
-      <NavBar darkMode={mode} handleMode={handleMode} />
+    <div>
+      {/* <NavBar darkMode={mode} handleMode={handleMode} />
       <Hero />
       {info}
       <Edited darkMode={mode}/>
-      <Footer darkMode={mode}/>
+      <Footer darkMode={mode}/> */}
+      <Weather/>
     </div>
   );
 }
