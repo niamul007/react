@@ -9,6 +9,10 @@ import { data } from "./components/Data";
 import Edited from "./components/Edited";
 import Footer from "./components/Footer";
 import Weather from "./components/Weather";
+import PrNav from "./components/PrNav";
+import Prhero from "./Prhero";
+import Ahero from "./components/Ahero";
+import { logicData } from "./components/LogicData";
 function App() {
   const [mode, setMode] = React.useState(true);
   function handleMode() {
@@ -30,16 +34,27 @@ function App() {
       />
     );
   });
-
-
-  return (
-    <div>
       {/* <NavBar darkMode={mode} handleMode={handleMode} />
       <Hero />
       {info}
       <Edited darkMode={mode}/>
       <Footer darkMode={mode}/> */}
       <Weather/>
+
+  const lData = logicData.map((data)=>{
+    return(
+    <Ahero 
+    key={data.id}
+    para={data.para}
+    />
+    )
+  })
+
+  return (
+    <div>
+      <PrNav/>
+      <Prhero/>
+      {lData}
     </div>
   );
 }
