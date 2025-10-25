@@ -1,6 +1,6 @@
 // File: employeesData.js
 
-export const employees = [
+export  const employees = [
   {
     id: 1,
     name: "Alex Johnson",
